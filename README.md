@@ -1,3 +1,43 @@
+### Solution for cachematrix.R
+
+
+<!-- -->
+### Test solution in cachematrix.R by creating a random matrix with 2 rows, 2 columns
+> b <- makeCacheMatrix(matrix(c(24,36,19,76), nrow = 2, ncol = 2))
+
+### call summary of matrix b
+> summary(b)
+             Length Class  Mode    
+storeMatrix  1      -none- function
+getMatrix    1      -none- function
+cacheInverse 1      -none- function
+getInverse   1      -none- function
+
+### call matrix b
+> b$getMatrix()
+     [,1] [,2]
+[1,]   24   19
+[2,]   36   76
+
+### inverse of matrix b
+> cacheSolve(b)
+            [,1]        [,2]
+[1,]  0.06666667 -0.01666667
+[2,] -0.03157895  0.02105263
+
+> cacheSolve(b)
+getting inverse from cache
+            [,1]        [,2]
+[1,]  0.06666667 -0.01666667
+[2,] -0.03157895  0.02105263
+> 
+
+
+
+
+
+
+
 ### Introduction
 
 This second programming assignment will require you to write an R
